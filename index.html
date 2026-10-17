@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pishu's Botanical House — Come in. Stay awhile.</title>
+<meta name="description" content="A leafy daylight café. Real Pishu dishes, slow mornings, welcoming tables." />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="botanical" data-demo="botanical">
+
+<header class="site-nav">
+  <a class="wordmark" href="index.html">
+    <svg class="logo-mark" width="34" height="34" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="21.5" stroke="currentColor" stroke-width="2"/><path d="M24 37c0-10 2.4-18 11.5-22-1.2 11.4-4.8 19.4-11.5 22Z" fill="currentColor"/><path d="M24 37c0-8-1.8-14.5-9.5-18.5 1 9.4 3.9 15.6 9.5 18.5Z" fill="currentColor" opacity="0.45"/><path d="M24 37V13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="wordmark-text">Pishu's<small>BOTANICAL HOUSE</small></span>
+  </a>
+  <nav class="nav-links">
+    <a href="#menu">Menu</a>
+    <a href="#story">Our story</a>
+    <a href="#gallery">The room</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <div class="nav-actions">
+    <span class="nav-table-chip" id="table-chip" hidden></span>
+    <button class="cart-trigger" id="cart-open">Bag <b id="cart-count">0</b></button>
+    <button class="reserve-trigger" id="reserve-open">Reserve →</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <div class="eyebrow">Pishu's Botanical House · Est. every morning</div>
+      <h1>
+        <span class="mask-line"><span>Come in.</span></span>
+        <span class="mask-line"><span><em>Stay awhile.</em></span></span>
+      </h1>
+      <p>A cup of chai. Something warm from the oven. Stories that last a little longer.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="primary-button">Explore the menu →</a>
+        <button class="outline-button" data-reserve>Reserve a table</button>
+      </div>
+      <div class="hero-meta">
+        <span>◷ 8 AM – 11 PM</span>
+        <span>⌖ 14 Verdant Lane, Bandra West</span>
+      </div>
+    </div>
+    <div class="hero-stamp"><span>FRESHLY BREWED</span><strong>Pishu's</strong><span>EVERY DAY</span></div>
+  </section>
+
+  <div class="marquee"><div class="marquee-track" id="marquee-track"></div></div>
+
+  <section class="menu-section" id="menu">
+    <div class="section-heading reveal">
+      <div>
+        <div class="eyebrow">From Pishu's menu</div>
+        <h2>Grown, poured, plated.</h2>
+      </div>
+      <p>Real dishes found in public Pishu listings. Prices shown are sample estimates and may vary by outlet.</p>
+    </div>
+    <div class="category-row" id="category-row"></div>
+    <div class="menu-grid" id="menu-grid"></div>
+  </section>
+
+  <section class="story-section" id="story">
+    <div class="story-frames">
+      <div class="frame-main reveal"><img src="https://images.unsplash.com/photo-1773753563088-e3ea21f9a992?crop=entropy&cs=srgb&fm=jpg&w=800&q=85" alt="Iced matcha latte, a Pishu signature pour" /></div>
+      <div class="frame-offset reveal"><img src="https://images.pexels.com/photos/38920692/pexels-photo-38920692.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Winter Tree juice beside the window" /></div>
+    </div>
+    <div class="story-copy reveal">
+      <div class="eyebrow">The Pishu way</div>
+      <h2>More than a café.<br /><em>A feeling of belonging.</em></h2>
+      <p>Inspired by the old cafés that made a city feel like home. Familiar flavours, leafy corners, welcoming tables, and the simple joy of taking your time.</p>
+      <div class="rituals">
+        <div><strong>01</strong><span>Find your corner</span></div>
+        <div><strong>02</strong><span>Order comfort</span></div>
+        <div><strong>03</strong><span>Stay awhile</span></div>
+      </div>
+      <button class="text-button" data-reserve>Find your table →</button>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <div class="section-heading reveal">
+      <div>
+        <div class="eyebrow">A peek inside</div>
+        <h2>Your new favourite corner.</h2>
+      </div>
+      <p>Warm spaces. Familiar faces.<br />A place to make yourself at home.</p>
+    </div>
+    <div class="bento-grid">
+      <div class="bento-tile tile-0 reveal"><img src="https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&fit=crop&w=1800&q=88" alt="The sunlit Botanical House room" loading="lazy" /></div>
+      <div class="bento-tile reveal"><img src="https://images.unsplash.com/photo-1781785163491-5c177831ac6e?crop=entropy&cs=srgb&fm=jpg&w=800&q=85" alt="Poached egg and avocado toast" loading="lazy" /></div>
+      <div class="bento-tile reveal"><img src="https://images.pexels.com/photos/4553027/pexels-photo-4553027.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Walnut brownie shake" loading="lazy" /></div>
+      <div class="bento-tile gallery-note reveal"><span>◈ Follow along</span><strong>@pishuscafe</strong></div>
+    </div>
+  </section>
+
+  <section class="visit-section" id="visit">
+    <div class="reveal">
+      <div class="eyebrow">Come say hello</div>
+      <h2>We'll leave<br /><em>the light on.</em></h2>
+    </div>
+    <div class="visit-details reveal">
+      <div><p>⌖ 14 Verdant Lane, Bandra West<br /><a href="https://maps.google.com" target="_blank" rel="noreferrer">Get directions ↗</a></p></div>
+      <div><p>◷ Every day<br /><strong>8 AM – 11 PM</strong></p></div>
+      <div><p>☕ For reservations<br /><strong>+91 98200 12345</strong></p></div>
+    </div>
+  </section>
+
+  <button class="qr-fab" id="qr-fab">▦ QR menu</button>
+</main>
+
+<footer class="site-footer">
+  <a class="wordmark" href="index.html">
+    <svg class="logo-mark" width="30" height="30" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="21.5" stroke="currentColor" stroke-width="2"/><path d="M24 37c0-10 2.4-18 11.5-22-1.2 11.4-4.8 19.4-11.5 22Z" fill="currentColor"/><path d="M24 37c0-8-1.8-14.5-9.5-18.5 1 9.4 3.9 15.6 9.5 18.5Z" fill="currentColor" opacity="0.45"/><path d="M24 37V13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="wordmark-text">Pishu's<small>BOTANICAL HOUSE</small></span>
+  </a>
+  <p>Made for slow mornings, late nights, and everything in between.</p>
+</footer>
+
+<div class="overlay" id="cart-overlay" hidden>
+  <aside class="cart-drawer">
+    <button class="close-button" data-close-cart>✕</button>
+    <div id="cart-body"></div>
+  </aside>
+</div>
+
+<div class="overlay center" id="reserve-overlay" hidden>
+  <div class="reservation-modal">
+    <button class="close-button" data-close-reserve>✕</button>
+    <div id="reserve-body"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
